@@ -1,4 +1,3 @@
-const arguments = process.argv.slice(2)
 let pi = 3.14
 function circleArea(yarıçap){
     
@@ -19,6 +18,6 @@ function circlecircumFerence (yarıçap){
 module.exports ={
     circleArea,
     circlecircumFerence,
-    arguments,
+   
     
 }

@@ -1,5 +1,5 @@
-const {circleArea,circlecircumFerence,arguments}=require("./circle.js")
+const {circleArea,circlecircumFerence}=require("./circle.js")
 
 
-circleArea(arguments[0]*1)
-circlecircumFerence(arguments[0]*1)
+circleArea(5)
+circlecircumFerence(5)
