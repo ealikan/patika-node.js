@@ -6,16 +6,16 @@ const server = http.createServer((req,res)=>{
 
     if(url ==="/"){
         res.writeHead(200,{"Content-Type":"text/html"})
-        res.write("<h1>index sayfasi</h1>")
-    }else if(url ==="/about"){
+        res.write("<h2>index sayfasi</h2>")
+    }else if(url ==="/hakkimda"){
         res.writeHead(200,{"Content-Type":"text/html"})
-        res.write("<h1>about sayfasi<h1>")
-    }else if (url ==="/contact"){
+        res.write("<h2>hakkimda sayfasina hosgeldiniz<h2>")
+    }else if (url ==="/iletisim"){
         res.writeHead(200,{"Content-Type":"text/html"})
-        res.write("<h1>contact sayfasi<h1>")
+        res.write("<h2>iletisim sayfasina hosgeldiniz<h2>")
     }else{
         res.writeHead(404,{"Content-Type":"text/html"})
-        res.write("<h1>404 NOT FOUND</h1>")
+        res.write("<h2>404 NOT FOUND</h2>")
     }
     
 
@@ -23,7 +23,7 @@ const server = http.createServer((req,res)=>{
     res.end()
 })
 
-const port = 8000
+const port = 5000
 
 server.listen(port,()=>{
     console.log(`sunucu port ${port} de başlatıldı.`)
